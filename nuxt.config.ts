@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-04',
@@ -11,9 +13,22 @@ export default defineNuxtConfig({
       },
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      ]
+      ],
+      script: [
+        {
+          textContent: `(function() {
+              const savedTheme = localStorage.getItem('theme') || 'light';
+              document.documentElement.setAttribute('data-theme', savedTheme);
+            })();`,
+          tagPosition: 'head',
+        },
+      ],
     }
   },
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  css: ["~/assets/app.css"],
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/google-fonts',
