@@ -57,12 +57,11 @@ export default defineNuxtConfig({
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
     },
-    strategy: 'prefix_except_default',
-    baseUrl: 'https://daltonponder.com',
+    strategy: 'no_prefix',
     defaultLocale: 'en',
     locales: [
-      { code: 'en', language: 'en-US' },
-      { code: 'es', language: 'es-US' }
+      { name: "English", code: 'en', language: 'en-US', file: 'en.json' },
+      { name: "Spanish", code: 'es', language: 'es-US', file: 'es.json' }
     ],
   },
 })
