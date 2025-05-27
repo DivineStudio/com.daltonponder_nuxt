@@ -23,8 +23,10 @@
   </section>
 </template>
 
-<script lang="ts" setup>
-
-</script>
-
-<style></style>
+<style scoped>
+.hero-bg-image {
+    background-image: url('/_nuxt/public/graphics/HeroBG.webp');
+    background-size: cover;
+    background-position: center;
+}
+</style>

@@ -2,9 +2,10 @@
 
   <HeroSection />
 
-  <ProAboutSection class="container px-8 mx-auto my-10" />
+  <ProAboutSection class="container px-8 mx-auto my-30" />
+
+  <EdCertsSection class="container px-8 mx-auto my-30" />
+
+  <SkillsSection class="container px-8 mx-auto my-30" />
+  
 </template>
-
-<script lang="ts" setup>
-
-</script>

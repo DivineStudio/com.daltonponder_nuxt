@@ -1,0 +1,70 @@
+{
+	"Programming & Languages": [
+		"C#",
+		"CSS",
+		"HTML",
+		"JavaScript",
+		"jQuery",
+		"SCSS",
+		"SQL",
+		"TypeScript"
+	],
+	"Frameworks & Libraries": [
+		"ASP.NET Core MVC",
+		"ASP.NET Razor Pages",
+		"Blazor Server",
+		"Blazor WebAssembly",
+		".NET MAUI",
+		"Vue.js",
+		"WPF",
+		"Xamarin.Forms"
+	],
+	"Tools & Platforms": [
+		"Azure DevOps",
+		"GitHub",
+		"Azure Pipelines",
+		"Bitbucket",
+		"Git",
+		"Microsoft SQL Server",
+		"PostgreSQL",
+		"SSMS",
+		"VSIX",
+		"Visual Studio"
+	],
+	"CMS Platforms": [
+		"Sitefinity",
+		"Umbraco"
+	],
+	"Development Practices": [
+		"Agile",
+		"CI/CD",
+		"DRY",
+		"Onion Architecture",
+		"Pair Programming",
+		"RESTful APIs",
+		"SDLC",
+		"SOLID",
+		"TDD"
+	],
+	"Systems & Infrastructure": [
+		"IIS",
+		"Node.js",
+		"Windows 10",
+		"Windows 11"
+	],
+	"Soft Skills & Work Ethic": [
+		"Communication",
+		"Customer Support",
+		"Detail-Oriented",
+		"Fast Learner",
+		"Problem Solving",
+		"Self-Motivated",
+		"Team Collaboration",
+		"Technical Support"
+	],
+	"Certifications": [
+		"Certified Ethical Hacker (CEH)",
+		"Certified Sitefinity Developer",
+		"Certified Sitefinity .NET Core Developer"
+	]
+}
