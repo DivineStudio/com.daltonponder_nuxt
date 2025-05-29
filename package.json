@@ -30,6 +30,8 @@
     "zod": "^3.24.4"
   },
   "devDependencies": {
+    "@iconify-json/fa6-brands": "^1.2.5",
+    "@iconify-json/mdi": "^1.2.3",
     "typescript": "^5.8.3"
   }
 }

@@ -34,7 +34,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useTemplateRef, onMounted, type ShallowRef } from 'vue'
+import { onMounted } from 'vue'
 
 const skillsFiles = import.meta.glob('~/assets/skillsSection/*.json', { eager: true });
 

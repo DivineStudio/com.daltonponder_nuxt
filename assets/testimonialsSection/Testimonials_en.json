@@ -1,0 +1,58 @@
+[
+	{
+		"author": "Justin Bubel",
+		"company": "Smooth Fusion",
+		"companyUrl": "https://www.smoothfusion.com/",
+		"position": "Vice President of Software Solutions",
+		"linkedInUrl": "https://www.linkedin.com/in/justin-bubel",
+		"testimonial": "<p class='mb-5'>Dalton is a standout Senior Web Developer on my team. He consistently engineers thoughtful, scalable full-stack solutions across a wide range of projects and technologies. What sets Dalton apart isn’t just his technical ability—it’s his mindset. He brings an entrepreneurial perspective to everything he does, always looking beyond the task at hand to consider the broader vision and long-term impact.</p><p class='mb-5'>Dalton is ethical, intelligent, and incredibly reliable. He’s the kind of team member you can trust with anything—especially the projects that fall outside the typical scope. He handles each challenge with care, clarity, and excellence. He also communicates effectively with both technical and non-technical stakeholders, making him a valuable bridge across departments.</p><p>I’m proud to work with Dalton. He brings integrity, initiative, and sharp insight to every engagement and consistently adds value across the organization.</p>"
+	},
+	{
+		"author": "Joe Robillard",
+		"company": "Smooth Fusion",
+		"companyUrl": "https://www.smoothfusion.com/",
+		"position": "Project Manager",
+		"linkedInUrl": "https://www.linkedin.com/in/joseph-robillard-mba-688b8663",
+		"testimonial": "<p>Dalton is one of the best developers I’ve had the pleasure to work with. Regardless of what I throw at him, I can expect the output to be thorough, explicit, and well-executed. He has made me better at my job by helping me understand nuances I had not considered as a project manager with over a decade of experience.</p>"
+	},
+	{
+		"author": "Jenni Roemisch",
+		"company": "Smooth Fusion",
+		"companyUrl": "https://www.smoothfusion.com/",
+		"position": "Director of Quality Assurance",
+		"linkedInUrl": "https://www.linkedin.com/in/jenni-roemisch-a855032",
+		"testimonial": "<p>I’ve had the pleasure of working with Dalton for several years, primarily in my role as a QA specialist on projects he developed. Dalton is a highly skilled Sitefinity developer—knowledgeable, approachable, and consistently supportive of the team. He’s always willing to collaborate, answer questions, and ensure the final product meets high standards.</p>"
+	},
+	{
+		"author": "Janae Allen",
+		"company": "Smooth Fusion",
+		"companyUrl": "https://www.smoothfusion.com/",
+		"position": "Senior Vice President of Technology",
+		"linkedInUrl": "https://www.linkedin.com/in/janaeallen",
+		"testimonial": "<p>Dalton’s dedication to providing elegant solutions is evident in all he does. His eye for detail, ability to problem-solve, and communication skills are valuable assets to any team.</p>"
+	},
+	{
+		"author": "Braden Mason",
+		"company": "Smooth Fusion",
+		"companyUrl": "https://www.smoothfusion.com/",
+		"position": "Vice President of Delivery",
+		"linkedInUrl": "https://www.linkedin.com/in/braden-mason-76876590",
+		"testimonial": "<p>I have enjoyed working with Dalton. He's incredibly sharp and learns new things quickly. His willingness to jump into the unknown and figure it out is admirable. What sets him apart is his combination of strong technical skills and excellent soft skills. He's as effective in client-facing discussions as he is in the codebase. Plus, his proactive communication ensures everyone is always on the same page. A real asset to any team.</p>"
+	},
+	{
+		"author": "Gary Evans",
+		"company": "Smooth Fusion",
+		"companyUrl": "https://www.smoothfusion.com/",
+		"position": "Vice President of Information Technology",
+		"linkedInUrl": "https://www.linkedin.com/in/garyevansjr",
+		"testimonial": "<p>I’ve always admired Dalton’s strong desire to dig in to a hard task, learn all about it, and put in the hard work to get it done right. He’s always willing to step outside the box and thoroughly think through the task in front of him.</p>"
+	},
+	{
+		"author": "Joshua Stephens",
+		"company": "Smooth Fusion",
+		"companyUrl": "https://www.smoothfusion.com/",
+		"position": "Senior Software Developer",
+		"linkedInUrl": "https://www.linkedin.com/in/joshua-stephens-944bb4b4",
+		"testimonial": "<p>Working with Dalton on our projects at Smooth Fusion is an incredibly productive experience. His ability to break down complex problems and communicate clearly helped our team deliver clean, maintainable code under tight deadlines. I always appreciated his willingness to review code thoughtfully, collaborate on difficult issues and work to streamline processes.</p>"
+	}
+]

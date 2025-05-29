@@ -29,22 +29,18 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   css: ["~/assets/app.css"],
-  modules: [
-    '@nuxtjs/i18n',
-    '@nuxtjs/google-fonts',
-    [
-      '@vee-validate/nuxt',
-      {
-        autoImports: true,
-        componentNames: {
-          Form: 'VeeForm',
-          Field: 'VeeField',
-          FieldArray: 'VeeFieldArray',
-          ErrorMessage: 'VeeErrorMessage',
-        }
+  modules: ['@nuxtjs/i18n', '@nuxtjs/google-fonts', [
+    '@vee-validate/nuxt',
+    {
+      autoImports: true,
+      componentNames: {
+        Form: 'VeeForm',
+        Field: 'VeeField',
+        FieldArray: 'VeeFieldArray',
+        ErrorMessage: 'VeeErrorMessage',
       }
-    ],
-  ],
+    }
+  ], '@nuxt/icon'],
   googleFonts: {
     families: {
       'Roboto': true,

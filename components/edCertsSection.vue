@@ -44,6 +44,7 @@
           <div><img class="size-10 rounded-none" src="public/logos/CEHLogo.webp" :alt="$t('Image.CEHLogoAlt')"/></div>
           <div>
             <div>Certified Ethical Hacker</div>
+            <div class="opacity-80 text-xs mb-1 italic">#ECC3649710528</div>
             <div class="text-xs uppercase font-semibold opacity-60">EC-Council</div>
           </div>
           <div>
