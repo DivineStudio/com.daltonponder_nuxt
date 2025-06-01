@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a href="#" class="btn btn-ghost text-lg" @click.prevent.stop="swapLang('en')">{{ $t('Navbar.Language') }}</a>
+    <a href="#" class="btn btn-ghost lg:text-lg" @click.prevent.stop="swapLang('en')">{{ $t('Navbar.Language') }}</a>
   </div>
 </template>
 
