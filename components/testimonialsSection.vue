@@ -5,8 +5,8 @@
     </HeaderBanner>
     <div class="mb-10">
       <div class="chat chat-start max-lg:flex max-lg:flex-col">
-        <div class="chat-image avatar max-lg:mx-auto max-lg:mb-3">
-          <div class="w-45 rounded-full">
+        <div class="chat-image avatar max-lg:mx-auto max-lg:mb-3 ">
+          <div class="w-45 rounded-full shadow-lg/40">
             <img
               :alt="$t('Image.ProfessionalPortraitOfJustinBubelAlt')"
               src="public/ProfessionalPortraitOfJustinBubel.webp"
