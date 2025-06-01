@@ -34,47 +34,47 @@
             </a>
           </span>
         </div>
-        <div class="chat-bubble max-lg:max-w-full p-5 opacity-85 text-lg" v-html="highlightedTestimonial.testimonial"></div>
+        <div class="chat-bubble max-lg:max-w-full p-5 opacity-85lg:text-lg" v-html="highlightedTestimonial.testimonial"></div>
       </div>
     </div>
     <div class="divider mb-10"></div>
-    <div class="flex max-lg:flex-col-reverse lg:flex-row lg:gap-10">
+    <div class="flex flex-col lg:flex-row lg:gap-10">
       <div class="flex-1/3">
         <picture>
           <img
             id="skillsImg"
-            class="w-full max-lg:max-h-50 lg:h-full max-lg:aspect-video max-lg:border max-lg:border-primary shadow-lg/40 object-cover object-center rounded-lg"
+            class="w-full max-lg:max-h-50 lg:h-full max-lg:aspect-video max-lg:border max-lg:border-accent max-lg:rounded-b-none shadow-lg/40 object-cover object-center rounded-lg"
             src="/_nuxt/public/graphics/DigitalScape.webp" :alt="$t('Image.DigitalScapeAlt')" />
         </picture>
       </div>
       <div class="flex-2/3 lg:max-w-2/3">
-        <swiper-container class="rounded-box w-full h-full border-accent border-1 lg:card-side bg-base-200 shadow-lg/40"
+        <swiper-container class="rounded-lg w-full h-full border-accent border-1 max-lg:rounded-t-none lg:card-side bg-base-200 shadow-lg/40"
                           slides-per-view="1"
                           navigation="true"
                           pagination="true"
                           loop="true">
           <swiper-slide v-for="(testimonial, index) in remainingTestimonials" :key="`testimonial${index}`" :id="`testimonial${index}`" class="carousel-item w-full relative">
-            <div class="card w-full pb-3 px-8">
+            <div class="card w-full pb-3 lg:px-8">
               <div class="card-body">
                 <div class="hover:scale-103 hover:translate-x-4 transition-transform duration-100 ease-in-out">
                   <a :href="testimonial.linkedInUrl"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="fa6-brands--linkedin link text-lg font-semibold underline-offset-3 decoration-accent hover:decoration-2">
+                      class="fa6-brands--linkedin link lg:text-lg font-semibold underline-offset-3 decoration-accent hover:decoration-2">
                     <span>{{ testimonial.author }}</span>
                   </a>
                 </div>
-                <div class="text-lg opacity-70 font-semibold">{{ highlightedTestimonial.position }}</div>
-                <div class="text-lg opacity-70 hover:scale-103 hover:translate-x-4 transition-transform duration-100 ease-in-out">
+                <div class="lg:text-lg opacity-70 font-semibold">{{ highlightedTestimonial.position }}</div>
+                <div class="lg:text-lg opacity-70 hover:scale-103 hover:translate-x-4 transition-transform duration-100 ease-in-out">
                   <a :href="highlightedTestimonial.companyUrl"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="mdi--external-link font-semibold link text-lg underline-offset-3 decoration-accent hover:decoration-2">
+                      class="mdi--external-link font-semibold link lg:text-lg underline-offset-3 decoration-accent hover:decoration-2">
                     {{ highlightedTestimonial.company }}
                   </a>
                 </div>
                 <div class="divider m-0"></div>
-                <div class="opacity-85 text-lg" v-html="testimonial.testimonial"></div>
+                <div class="opacity-85 lg:text-lg" v-html="testimonial.testimonial"></div>
               </div>
             </div>
           </swiper-slide>
@@ -172,6 +172,13 @@ const remainingTestimonials = computed(() => {
 swiper-container::part(button-prev),
 swiper-container::part(button-next) {
     color: var(--color-primary);
+}
+
+@media screen and (max-width: 1024px) {
+  swiper-container::part(button-prev),
+  swiper-container::part(button-next) {
+    display: none;
+  }
 }
 
 swiper-container::part(bullet){
