@@ -3,7 +3,7 @@
     <HeaderBanner class="mb-10">
       {{ $t("Home.TestimonialsSection.Header") }}
     </HeaderBanner>
-    <div>
+    <div class="mb-10">
       <div class="chat chat-start max-lg:flex max-lg:flex-col">
         <div class="chat-image avatar max-lg:mx-auto max-lg:mb-3">
           <div class="w-45 rounded-full">
@@ -20,7 +20,6 @@
                 rel="noopener noreferrer"
                 class="fa6-brands--linkedin link text-lg font-semibold underline-offset-3 decoration-accent hover:decoration-2">
               <span>{{ highlightedTestimonial.author }}</span>
-              <!-- <span class="ms-1"><Icon name="fa6-brands:linkedin" size="0.85em" style="color:#0077B5" /></span> -->
             </a>
           </span>
           <span class="lg:ms-6 lg:me-2 text-lg opacity-50">&bull;</span>
@@ -33,19 +32,63 @@
                 class="mdi--external-link font-semibold link text-lg underline-offset-3 decoration-accent hover:decoration-2">
               {{ highlightedTestimonial.company }}
             </a>
-            <!-- <span><Icon name="mdi:external-link" size="0.85em" class="ms-1" /></span> -->
           </span>
         </div>
-        <div class="chat-bubble max-lg:max-w-full p-5 opacity-85" v-html="highlightedTestimonial.testimonial"></div>
+        <div class="chat-bubble max-lg:max-w-full p-5 opacity-85 text-lg" v-html="highlightedTestimonial.testimonial"></div>
       </div>
     </div>
-    <div>
-
+    <div class="flex max-lg:flex-col-reverse lg:flex-row lg:gap-10">
+      <div class="flex-1/3">
+        <picture>
+          <img
+            id="skillsImg"
+            class="w-full max-lg:max-h-50 lg:h-full max-lg:aspect-video max-lg:border max-lg:border-primary shadow-lg/40 object-cover object-center rounded-lg"
+            src="/_nuxt/public/graphics/DigitalScape.webp" :alt="$t('Image.DigitalScapeAlt')" />
+        </picture>
+      </div>
+      <div class="flex-2/3 lg:max-w-2/3">
+        <div class="carousel rounded-box w-full h-full border-accent border-1 lg:card-side bg-base-200 shadow-lg/40">
+          <div v-for="(testimonial, index) in remainingTestimonials" :key="`testimonial${index}`" :id="`testimonial${index}`" class="carousel-item w-full relative">
+            <div class="card w-full px-15">
+              <div class="card-body">
+                <div class="hover:scale-103 hover:translate-x-4 transition-transform duration-100 ease-in-out">
+                  <a :href="testimonial.linkedInUrl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="fa6-brands--linkedin link text-lg font-semibold underline-offset-3 decoration-accent hover:decoration-2">
+                    <span>{{ testimonial.author }}</span>
+                  </a>
+                </div>
+                <div class="text-lg opacity-70 font-semibold">{{ highlightedTestimonial.position }}</div>
+                <div class="text-lg opacity-70 hover:scale-103 hover:translate-x-4 transition-transform duration-100 ease-in-out">
+                  <a :href="highlightedTestimonial.companyUrl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="mdi--external-link font-semibold link text-lg underline-offset-3 decoration-accent hover:decoration-2">
+                    {{ highlightedTestimonial.company }}
+                  </a>
+                </div>
+                <div class="divider m-0"></div>
+                <div class="opacity-85 text-lg" v-html="testimonial.testimonial"></div>
+              </div>
+            </div>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a :href="`#testimonial${(index - 1 + remainingTestimonials.length) % remainingTestimonials.length}`" class="btn btn-circle bg-base-300 hover:border-accent">❮</a>
+              <a :href="`#testimonial${(index + 1) % remainingTestimonials.length}`" class="btn btn-circle bg-base-300 hover:border-accent">❯</a>
+            </div>
+          </div>
+        </div>        
+        <!-- <div class="flex w-full justify-center gap-2 py-2">
+          <a v-for="(testimonial, index) in remainingTestimonials" :key="`testimonialsButton${index}`" :href="`#testimonial${index}`" class="btn btn-circle">{{ index + 1 }}</a>
+        </div> -->
+      </div>
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
+
+
 
 interface Testimonial {
   author: string;
