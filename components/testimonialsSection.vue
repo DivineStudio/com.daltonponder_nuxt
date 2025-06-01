@@ -37,6 +37,7 @@
         <div class="chat-bubble max-lg:max-w-full p-5 opacity-85 text-lg" v-html="highlightedTestimonial.testimonial"></div>
       </div>
     </div>
+    <div class="divider mb-10"></div>
     <div class="flex max-lg:flex-col-reverse lg:flex-row lg:gap-10">
       <div class="flex-1/3">
         <picture>
@@ -47,9 +48,13 @@
         </picture>
       </div>
       <div class="flex-2/3 lg:max-w-2/3">
-        <div class="carousel rounded-box w-full h-full border-accent border-1 lg:card-side bg-base-200 shadow-lg/40">
-          <div v-for="(testimonial, index) in remainingTestimonials" :key="`testimonial${index}`" :id="`testimonial${index}`" class="carousel-item w-full relative">
-            <div class="card w-full px-15">
+        <swiper-container class="rounded-box w-full h-full border-accent border-1 lg:card-side bg-base-200 shadow-lg/40"
+                          slides-per-view="1"
+                          navigation="true"
+                          pagination="true"
+                          loop="true">
+          <swiper-slide v-for="(testimonial, index) in remainingTestimonials" :key="`testimonial${index}`" :id="`testimonial${index}`" class="carousel-item w-full relative">
+            <div class="card w-full pb-3 px-8">
               <div class="card-body">
                 <div class="hover:scale-103 hover:translate-x-4 transition-transform duration-100 ease-in-out">
                   <a :href="testimonial.linkedInUrl"
@@ -72,15 +77,8 @@
                 <div class="opacity-85 text-lg" v-html="testimonial.testimonial"></div>
               </div>
             </div>
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a :href="`#testimonial${(index - 1 + remainingTestimonials.length) % remainingTestimonials.length}`" class="btn btn-circle bg-base-300 hover:border-accent">❮</a>
-              <a :href="`#testimonial${(index + 1) % remainingTestimonials.length}`" class="btn btn-circle bg-base-300 hover:border-accent">❯</a>
-            </div>
-          </div>
-        </div>        
-        <!-- <div class="flex w-full justify-center gap-2 py-2">
-          <a v-for="(testimonial, index) in remainingTestimonials" :key="`testimonialsButton${index}`" :href="`#testimonial${index}`" class="btn btn-circle">{{ index + 1 }}</a>
-        </div> -->
+          </swiper-slide>
+        </swiper-container>
       </div>
     </div>
   </section>
@@ -88,7 +86,9 @@
 
 <script lang="ts" setup>
 
-
+// Import and register Swiper components
+import { register } from 'swiper/element/bundle';
+register();
 
 interface Testimonial {
   author: string;
@@ -167,6 +167,19 @@ const remainingTestimonials = computed(() => {
 
 [data-theme="dark"] .mdi--external-link::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2z'/%3E%3C/svg%3E");
+}
+
+swiper-container::part(button-prev),
+swiper-container::part(button-next) {
+    color: var(--color-primary);
+}
+
+swiper-container::part(bullet){
+  background-color: var(--color-accent);
+}
+
+swiper-container::part(bullet-active) {
+  background-color: var(--color-primary);
 }
 
 </style>
