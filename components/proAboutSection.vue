@@ -12,11 +12,11 @@
           <h2 class="text-2xl md:text-3xl lg:text-4xl text-primary font-bold mb-3">
             {{ $t("Home.ProAboutSection.Header1") }}
           </h2>
-          <p class="text-md lg:text-lg xl:text-xl mb-3">{{ $t("Home.ProAboutSection.Paragraph1") }}</p>
+          <p class="lg:text-lg xl:text-xl mb-3">{{ $t("Home.ProAboutSection.Paragraph1") }}</p>
           <h2 class="text-2xl md:text-3xl lg:text-4xl text-primary font-bold mt-10 mb-3">
             {{ $t("Home.ProAboutSection.Header2") }}
           </h2>
-          <p class="text-md lg:text-lg xl:text-xl mb-3">{{ $t("Home.ProAboutSection.Paragraph2") }}</p>
+          <p class="lg:text-lg xl:text-xl mb-3">{{ $t("Home.ProAboutSection.Paragraph2") }}</p>
         </div>
       </div>
     </div>

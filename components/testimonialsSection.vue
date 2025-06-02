@@ -6,7 +6,7 @@
     <div class="mb-10">
       <div class="chat chat-start max-lg:flex max-lg:flex-col">
         <div class="chat-image avatar max-lg:mx-auto max-lg:mb-3 ">
-          <div class="w-45 rounded-full shadow-lg/40">
+          <div class="w-45 xl:w-60 rounded-full shadow-lg/40">
             <img
               :alt="$t('Image.ProfessionalPortraitOfJustinBubelAlt')"
               src="public/ProfessionalPortraitOfJustinBubel.webp"
@@ -18,23 +18,23 @@
             <a :href="highlightedTestimonial.linkedInUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="fa6-brands--linkedin link text-lg font-semibold underline-offset-3 decoration-accent hover:decoration-2">
+                class="fa6-brands--linkedin link text-lg xl:text-xl font-semibold underline-offset-3 decoration-accent hover:decoration-2">
               <span>{{ highlightedTestimonial.author }}</span>
             </a>
           </span>
-          <span class="lg:ms-6 lg:me-2 text-lg opacity-50">&bull;</span>
-          <span class="text-lg opacity-70 font-semibold">{{ highlightedTestimonial.position }}</span>
-          <span class="text-lg opacity-70 mx-2">at</span>
-          <span class="text-lg opacity-70 hover:scale-103 transition-transform duration-100 ease-in-out">
+          <span class="lg:ms-6 lg:me-2 text-lg xl:text-xl opacity-50">&bull;</span>
+          <span class="text-lg xl:text-xl opacity-70 font-semibold">{{ highlightedTestimonial.position }}</span>
+          <span class="text-lg xl:text-xl opacity-70 mx-2">at</span>
+          <span class="text-lg xl:text-xl opacity-70 hover:scale-103 transition-transform duration-100 ease-in-out">
             <a :href="highlightedTestimonial.companyUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="mdi--external-link font-semibold link text-lg underline-offset-3 decoration-accent hover:decoration-2">
+                class="mdi--external-link font-semibold link lg:text-lg xl:text-xl underline-offset-3 decoration-accent hover:decoration-2">
               {{ highlightedTestimonial.company }}
             </a>
           </span>
         </div>
-        <div class="chat-bubble max-lg:max-w-full p-5 opacity-85 lg:text-lg" v-html="highlightedTestimonial.testimonial"></div>
+        <div class="chat-bubble max-lg:max-w-full p-5 opacity-85 lg:text-lg xl:text-xl" v-html="highlightedTestimonial.testimonial"></div>
       </div>
     </div>
     <div class="divider mb-10"></div>
@@ -60,21 +60,21 @@
                   <a :href="testimonial.linkedInUrl"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="fa6-brands--linkedin link lg:text-lg font-semibold underline-offset-3 decoration-accent hover:decoration-2">
+                      class="fa6-brands--linkedin link lg:text-lg xl:text-xl font-semibold underline-offset-3 decoration-accent hover:decoration-2">
                     <span>{{ testimonial.author }}</span>
                   </a>
                 </div>
-                <div class="lg:text-lg opacity-70 font-semibold">{{ highlightedTestimonial.position }}</div>
-                <div class="lg:text-lg opacity-70 hover:scale-103 hover:translate-x-4 transition-transform duration-100 ease-in-out">
+                <div class="lg:text-lg xl:text-xl opacity-70 font-semibold">{{ highlightedTestimonial.position }}</div>
+                <div class="lg:text-lg xl:text-xl opacity-70 hover:scale-103 hover:translate-x-4 transition-transform duration-100 ease-in-out">
                   <a :href="highlightedTestimonial.companyUrl"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="mdi--external-link font-semibold link lg:text-lg underline-offset-3 decoration-accent hover:decoration-2">
+                      class="mdi--external-link font-semibold link lg:text-lg xl:text-xl underline-offset-3 decoration-accent hover:decoration-2">
                     {{ highlightedTestimonial.company }}
                   </a>
                 </div>
                 <div class="divider m-0"></div>
-                <div class="opacity-85 lg:text-lg" v-html="testimonial.testimonial"></div>
+                <div class="opacity-85 lg:text-lg xl:text-xl" v-html="testimonial.testimonial"></div>
               </div>
             </div>
           </swiper-slide>
