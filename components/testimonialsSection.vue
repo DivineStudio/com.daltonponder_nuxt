@@ -54,9 +54,9 @@
                           pagination="true"
                           loop="true">
           <swiper-slide v-for="(testimonial, index) in remainingTestimonials" :key="`testimonial${index}`" :id="`testimonial${index}`" class="carousel-item w-full relative">
-            <div class="card w-full pb-3 lg:px-8">
+            <div class="card w-full pb-3 lg:px-8 cursor-grab">
               <div class="card-body">
-                <div class="hover:scale-103 hover:translate-x-4 transition-transform duration-100 ease-in-out">
+                <div class="w-fit hover:scale-103 transition-transform duration-100 ease-in-out">
                   <a :href="testimonial.linkedInUrl"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -64,8 +64,8 @@
                     <span>{{ testimonial.author }}</span>
                   </a>
                 </div>
-                <div class="lg:text-lg xl:text-xl opacity-70 font-semibold">{{ highlightedTestimonial.position }}</div>
-                <div class="lg:text-lg xl:text-xl opacity-70 hover:scale-103 hover:translate-x-4 transition-transform duration-100 ease-in-out">
+                <div class="w-fit lg:text-lg xl:text-xl opacity-70 font-semibold cursor-grab">{{ highlightedTestimonial.position }}</div>
+                <div class="w-fit lg:text-lg xl:text-xl opacity-70 hover:scale-103 transition-transform duration-100 ease-in-out">
                   <a :href="highlightedTestimonial.companyUrl"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -74,7 +74,7 @@
                   </a>
                 </div>
                 <div class="divider m-0"></div>
-                <div class="opacity-85 lg:text-lg xl:text-xl" v-html="testimonial.testimonial"></div>
+                <div class="opacity-85 lg:text-lg xl:text-xl cursor-grab" v-html="testimonial.testimonial"></div>
               </div>
             </div>
           </swiper-slide>
@@ -179,6 +179,10 @@ swiper-container::part(button-next) {
   swiper-container::part(button-next) {
     display: none;
   }
+}
+
+swiper-container::part(pagination) {
+  cursor: grab;
 }
 
 swiper-container::part(bullet){
