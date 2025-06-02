@@ -34,7 +34,7 @@
             </a>
           </span>
         </div>
-        <div class="chat-bubble max-lg:max-w-full p-5 opacity-85lg:text-lg" v-html="highlightedTestimonial.testimonial"></div>
+        <div class="chat-bubble max-lg:max-w-full p-5 opacity-85 lg:text-lg" v-html="highlightedTestimonial.testimonial"></div>
       </div>
     </div>
     <div class="divider mb-10"></div>
