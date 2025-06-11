@@ -20,7 +20,10 @@
         </p>
       </div>
     </div>
-    <div class="max-2xl:hidden"><button id="goToContent" class="btn btn-wide text-shadow-lg/40 bg-accent border-accent text-white outline-white absolute bottom-10 left-0 right-0 mx-auto">{{ $t("Home.Hero.GoToContent") }}</button></div>
+    <div class="max-2xl:hidden">
+      <button id="goToContent" class="btn btn-circle border-0 mdi--arrow-down-circle hover:scale-120 transition ease-in-out text-shadow-lg/40 absolute bottom-10 left-0 right-0 mx-auto">
+      </button>
+    </div>
   </section>
 </template>
 
@@ -46,5 +49,14 @@ onMounted(() => {
     background-image: url('/_nuxt/public/graphics/HeroBG.webp');
     background-size: cover;
     background-position: center;
+}
+
+.mdi--arrow-down-circle {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2340798C' d='M11 6v8l-3.5-3.5l-1.42 1.42L12 17.84l5.92-5.92l-1.42-1.42L13 14V6zm1 16A10 10 0 0 1 2 12A10 10 0 0 1 12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10'/%3E%3C/svg%3E");
 }
 </style>
