@@ -44,7 +44,7 @@
           <img
             id="skillsImg"
             class="w-full max-lg:max-h-50 lg:h-full max-lg:aspect-video max-lg:border max-lg:border-accent max-lg:rounded-b-none shadow-lg/40 object-cover object-center rounded-lg"
-            src="/_nuxt/public/graphics/DigitalScape.webp" :alt="$t('Image.DigitalScapeAlt')" />
+            src="/graphics/DigitalScape.webp" :alt="$t('Image.DigitalScapeAlt')" />
         </picture>
       </div>
       <div class="flex-2/3 lg:max-w-2/3">

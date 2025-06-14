@@ -21,12 +21,12 @@
       </div>
       <div class="flex-1/2">
         <picture>
-          <source srcset="/_nuxt/public/graphics/PCB_Desktop.webp" media="(min-width: 1024px)" />
+          <source srcset="/graphics/PCB_Desktop.webp" media="(min-width: 1024px)" />
           <!-- lg:max-h-none h-full w-full aspect-video lg:aspect-square object-cover object-center -->
           <img
             id="skillsImg"
             class="lg:mask lg:mask-heart lg:mask-half-2 w-full max-lg:max-h-50 max-lg:aspect-video max-lg:border max-lg:border-primary shadow-lg/40 object-cover object-center rounded-lg"
-            src="/_nuxt/public/graphics/PCB_Mobile.webp" :alt="$t('Image.PCBAlt')" />
+            src="/graphics/PCB_Mobile.webp" :alt="$t('Image.PCBAlt')" />
         </picture>
       </div>
     </div>

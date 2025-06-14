@@ -46,7 +46,7 @@ onMounted(() => {
 
 <style scoped>
 .hero-bg-image {
-    background-image: url('/_nuxt/public/graphics/HeroBG.webp');
+    background-image: url('/graphics/HeroBG.webp');
     background-size: cover;
     background-position: center;
 }
