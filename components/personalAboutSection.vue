@@ -20,10 +20,10 @@
           <div class="lg:text-lg xl:text-xl mb-3 opacity-80" v-html="$t('Home.PersonalAboutSection.Paragraph3')"></div>
         </div>
         <picture>
-          <source srcset="/_nuxt/public/graphics/BlurryLights_Desktop.webp" media="(min-width: 1024px)" />
+          <source srcset="/graphics/BlurryLights_Desktop.webp" media="(min-width: 1024px)" />
           <img
             class="max-h-75 lg:max-h-none h-full w-full aspect-video lg:aspect-square object-cover object-center max-lg:rounded-t-2xl lg:rounded-r-2xl"
-            src="/_nuxt/public/graphics/BlurryLights_Mobile.webp" :alt="$t('Image.BlurryLightsAlt')" />
+            src="/graphics/BlurryLights_Mobile.webp" :alt="$t('Image.BlurryLightsAlt')" />
         </picture>
       </div>
     </div>
