@@ -24,7 +24,7 @@
           </span>
           <span class="lg:ms-6 lg:me-2 text-lg xl:text-xl opacity-50">&bull;</span>
           <span class="text-lg xl:text-xl opacity-70 font-semibold">{{ highlightedTestimonial.position }}</span>
-          <span class="text-lg xl:text-xl opacity-70 mx-2">at</span>
+          <span class="text-lg xl:text-xl opacity-70 mx-2">{{ $t('Home.TestimonialsSection.At') }}</span>
           <span class="text-lg xl:text-xl opacity-70 hover:scale-103 transition-transform duration-100 ease-in-out">
             <a :href="highlightedTestimonial.companyUrl"
                 target="_blank"
