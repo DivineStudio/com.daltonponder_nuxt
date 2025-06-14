@@ -8,13 +8,13 @@
         <legend class="fieldset-legend sr-only">{{ $t('Home.ContactFormSection.Header') }}</legend>
         
         <label id="contactName" class="label sr-only">{{ $t("Home.ContactFormSection.Name") }}</label>
-        <input type="text" class="input input-lg w-full" :placeholder="$t('Home.ContactFormSection.Name')" :name="$t('Home.ContactFormSection.Name')" aria-describedby="contactName" required />
+        <input type="text" class="input lg:input-lg w-full" :placeholder="$t('Home.ContactFormSection.Name')" :name="$t('Home.ContactFormSection.Name')" aria-describedby="contactName" required />
 
         <label id="contactEmail" class="label sr-only">{{ $t('Home.ContactFormSection.Email') }}</label>
-        <input type="email" class="input input-lg w-full" :placeholder="$t('Home.ContactFormSection.Email')" :name="$t('Home.ContactFormSection.Email')" aria-describedby="contactEmail" required />
+        <input type="email" class="input lg:input-lg w-full" :placeholder="$t('Home.ContactFormSection.Email')" :name="$t('Home.ContactFormSection.Email')" aria-describedby="contactEmail" required />
 
         <label id="contactSubject" class="label sr-only">{{ $t('Home.ContactFormSection.SelectASubject') }}</label>
-        <select class="select select-lg w-full" :placeholder="$t('Home.ContactFormSection.SelectASubject')" :name="$t('Home.ContactFormSection.SelectASubject')" aria-describedby="contactSubject" required>
+        <select class="select lg:select-lg w-full" :placeholder="$t('Home.ContactFormSection.SelectASubject')" :name="$t('Home.ContactFormSection.SelectASubject')" aria-describedby="contactSubject" required>
           <option value="" disabled selected>{{ $t('Home.ContactFormSection.SelectASubject') }}</option>
           <option value="Freelance Project Inquiry">Freelance Project Inquiry</option>
           <option value="Full-Time Employment Opportunity">Full-Time Employment Opportunity</option>
@@ -30,9 +30,9 @@
         </select>
 
         <label id="contactMessage" class="label sr-only">{{ $t('Home.ContactFormSection.Message') }}</label>
-        <textarea class="textarea input-lg w-full" :placeholder="$t('Home.ContactFormSection.MessagePlaceholder')" :name="$t('Home.ContactFormSection.Message')" aria-describedby="contactMessage"></textarea>
+        <textarea class="textarea lg:input-lg w-full" :placeholder="$t('Home.ContactFormSection.MessagePlaceholder')" :name="$t('Home.ContactFormSection.Message')" aria-describedby="contactMessage"></textarea>
 
-        <button class="btn btn-accent text-lg">
+        <button class="btn btn-accent lg:text-lg">
             {{ $t('Home.ContactFormSection.Submit') }}
         </button>
       </fieldset>
