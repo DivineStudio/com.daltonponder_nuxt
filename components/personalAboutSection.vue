@@ -9,15 +9,15 @@
           <h3 class="text-2xl md:text-3xl lg:text-4xl text-primary font-bold mb-3">
             {{ $t("Home.PersonalAboutSection.Header1") }}
           </h3>
-          <div class="lg:text-lg xl:text-xl mb-3" v-html="$t('Home.PersonalAboutSection.Paragraph1')"></div>
+          <div class="lg:text-lg xl:text-xl mb-3 opacity-80" v-html="$t('Home.PersonalAboutSection.Paragraph1')"></div>
           <h3 class="text-2xl md:text-3xl lg:text-4xl text-primary font-bold mt-10 mb-3">
             {{ $t("Home.PersonalAboutSection.Header2") }}
           </h3>
-          <div class="lg:text-lg xl:text-xl mb-3" v-html="$t('Home.PersonalAboutSection.Paragraph2')"></div>
+          <div class="lg:text-lg xl:text-xl mb-3 opacity-80" v-html="$t('Home.PersonalAboutSection.Paragraph2')"></div>
           <h3 class="text-2xl md:text-3xl lg:text-4xl text-primary font-bold mt-10 mb-3">
             {{ $t("Home.PersonalAboutSection.Header3") }}
           </h3>
-          <div class="lg:text-lg xl:text-xl mb-3" v-html="$t('Home.PersonalAboutSection.Paragraph3')"></div>
+          <div class="lg:text-lg xl:text-xl mb-3 opacity-80" v-html="$t('Home.PersonalAboutSection.Paragraph3')"></div>
         </div>
         <picture>
           <source srcset="/_nuxt/public/graphics/BlurryLights_Desktop.webp" media="(min-width: 1024px)" />

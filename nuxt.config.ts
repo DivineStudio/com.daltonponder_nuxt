@@ -22,6 +22,16 @@ export default defineNuxtConfig({
             })();`,
           tagPosition: 'head',
         },
+        {
+          src: 'https://www.google.com/recaptcha/api.js',
+          tagPosition: 'head',
+        },
+        {
+          textContent: `function onSubmit() {
+            document.getElementById("myForm").submit()
+          }`,
+          tagPosition: 'head',
+        },
       ],
     }
   },

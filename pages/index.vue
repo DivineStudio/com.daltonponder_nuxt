@@ -17,4 +17,6 @@ import TestimonialsSection from '~/components/testimonialsSection.vue';
 
   <PersonalAboutSection class="container px-8 mx-auto my-30" />
 
+  <ContactFormSection class="container px-8 mx-auto my-30" />
+
 </template>
