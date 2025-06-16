@@ -24,4 +24,4 @@ logs
 !.env.example
 
 # VS Code
-.code-workspace
+com.daltonponder_nuxt.code-workspace
