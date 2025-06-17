@@ -64,13 +64,13 @@
                     <span>{{ testimonial.author }}</span>
                   </a>
                 </div>
-                <div class="w-fit lg:text-lg xl:text-xl opacity-70 font-semibold cursor-grab">{{ highlightedTestimonial.position }}</div>
+                <div class="w-fit lg:text-lg xl:text-xl opacity-70 font-semibold cursor-grab">{{ testimonial.position }}</div>
                 <div class="w-fit lg:text-lg xl:text-xl opacity-70 hover:scale-103 transition-transform duration-100 ease-in-out">
-                  <a :href="highlightedTestimonial.companyUrl"
+                  <a :href="testimonial.companyUrl"
                       target="_blank"
                       rel="noopener noreferrer"
                       class="mdi--external-link font-semibold link lg:text-lg xl:text-xl underline-offset-3 decoration-accent hover:decoration-2">
-                    {{ highlightedTestimonial.company }}
+                    {{ testimonial.company }}
                   </a>
                 </div>
                 <div class="divider m-0"></div>
