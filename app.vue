@@ -8,7 +8,7 @@
             <NuxtLink to="/" class="btn btn-ghost text-xl">
               <img class="max-h-12"
                    src="/logos/DP_FullLogo_250x84.webp"
-                   :alt="$t('Image.CodeRainAlt')" />
+                   :alt="$t('Image.DaltonPonderLogoAlt')" />
             </NuxtLink>
           </div>
           <div class="navbar-center hidden lg:flex">
