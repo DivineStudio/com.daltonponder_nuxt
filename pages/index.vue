@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import TestimonialsSection from '~/components/testimonialsSection.vue';
-
-</script>
-
 <template>
 
   <HeroSection />
