@@ -49,6 +49,7 @@
   opacity: 0;
   transform: scale(0);
   pointer-events: none; /* don't allow clicks when hidden */
+  z-index: 9999;
 }
 
 #back-to-top.visible {
