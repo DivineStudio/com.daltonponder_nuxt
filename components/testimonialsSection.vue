@@ -6,19 +6,16 @@
     <div class="mb-10">
       <div class="chat chat-start max-lg:flex max-lg:flex-col">
         <div class="chat-image avatar max-lg:mx-auto max-lg:mb-3 ">
-          <div class="w-45 xl:w-60 rounded-full shadow-lg/40">
-            <img
-              :alt="$t('Image.ProfessionalPortraitOfJustinBubelAlt')"
-              src="public/ProfessionalPortraitOfJustinBubel.webp"
-            />
+          <div class="w-45 xl:w-60 rounded-full">
+            <img :alt="$t('Image.ProfessionalPortraitOfJustinBubelAlt')"
+              src="public/ProfessionalPortraitOfJustinBubel.webp" />
           </div>
         </div>
-        <div class="chat-header lg:ms-1 mb-3 lg:mb-1 max-lg:mx-auto max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-0">
+        <div
+          class="chat-header lg:ms-1 mb-3 lg:mb-1 max-lg:mx-auto max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-0">
           <span class="hover:scale-103 transition-transform duration-100 ease-in-out">
-            <a :href="highlightedTestimonial.linkedInUrl"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="fa6-brands--linkedin link text-lg xl:text-xl font-semibold underline-offset-3 decoration-accent hover:decoration-2">
+            <a :href="highlightedTestimonial.linkedInUrl" target="_blank" rel="noopener noreferrer"
+              class="fa6-brands--linkedin link text-lg xl:text-xl font-semibold underline-offset-3 decoration-accent hover:decoration-2">
               <span>{{ highlightedTestimonial.author }}</span>
             </a>
           </span>
@@ -26,50 +23,45 @@
           <span class="text-lg xl:text-xl opacity-70 font-semibold">{{ highlightedTestimonial.position }}</span>
           <span class="text-lg xl:text-xl opacity-70 mx-2">{{ $t('Home.TestimonialsSection.At') }}</span>
           <span class="text-lg xl:text-xl opacity-70 hover:scale-103 transition-transform duration-100 ease-in-out">
-            <a :href="highlightedTestimonial.companyUrl"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mdi--external-link font-semibold link lg:text-lg xl:text-xl underline-offset-3 decoration-accent hover:decoration-2">
+            <a :href="highlightedTestimonial.companyUrl" target="_blank" rel="noopener noreferrer"
+              class="mdi--external-link font-semibold link lg:text-lg xl:text-xl underline-offset-3 decoration-accent hover:decoration-2">
               {{ highlightedTestimonial.company }}
             </a>
           </span>
         </div>
-        <div class="chat-bubble max-lg:max-w-full p-5 opacity-85 lg:text-lg xl:text-xl" v-html="highlightedTestimonial.testimonial"></div>
+        <div class="chat-bubble max-lg:max-w-full p-5 opacity-85 lg:text-lg xl:text-xl"
+          v-html="highlightedTestimonial.testimonial"></div>
       </div>
     </div>
     <div class="divider mb-10"></div>
     <div class="flex flex-col lg:flex-row lg:gap-10">
       <div class="flex-1/3">
         <picture>
-          <img
-            id="skillsImg"
-            class="w-full max-lg:max-h-50 lg:h-full max-lg:aspect-video max-lg:border max-lg:border-accent max-lg:rounded-b-none shadow-lg/40 object-cover object-center rounded-lg"
+          <img id="skillsImg"
+            class="w-full max-lg:max-h-50 lg:h-full max-lg:aspect-video max-lg:border max-lg:border-accent max-lg:rounded-b-none object-cover object-center rounded-lg"
             src="/graphics/DigitalScape.webp" :alt="$t('Image.DigitalScapeAlt')" />
         </picture>
       </div>
       <div class="flex-2/3 lg:max-w-2/3">
-        <swiper-container class="rounded-lg w-full h-full border-accent border-1 max-lg:rounded-t-none lg:card-side bg-base-200 shadow-lg/40"
-                          slides-per-view="1"
-                          navigation="true"
-                          pagination="true"
-                          loop="true">
-          <swiper-slide v-for="(testimonial, index) in remainingTestimonials" :key="`testimonial${index}`" :id="`testimonial${index}`" class="carousel-item w-full relative">
+        <swiper-container
+          class="rounded-lg w-full h-full border-accent border-1 max-lg:rounded-t-none lg:card-side bg-base-200"
+          slides-per-view="1" navigation="true" pagination="true" loop="true">
+          <swiper-slide v-for="(testimonial, index) in remainingTestimonials" :key="`testimonial${index}`"
+            :id="`testimonial${index}`" class="carousel-item w-full relative">
             <div class="card w-full pb-3 lg:px-8 cursor-grab">
               <div class="card-body">
                 <div class="w-fit hover:scale-103 transition-transform duration-100 ease-in-out">
-                  <a :href="testimonial.linkedInUrl"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="fa6-brands--linkedin link lg:text-lg xl:text-xl font-semibold underline-offset-3 decoration-accent hover:decoration-2">
+                  <a :href="testimonial.linkedInUrl" target="_blank" rel="noopener noreferrer"
+                    class="fa6-brands--linkedin link lg:text-lg xl:text-xl font-semibold underline-offset-3 decoration-accent hover:decoration-2">
                     <span>{{ testimonial.author }}</span>
                   </a>
                 </div>
-                <div class="w-fit lg:text-lg xl:text-xl opacity-70 font-semibold cursor-grab">{{ testimonial.position }}</div>
-                <div class="w-fit lg:text-lg xl:text-xl opacity-70 hover:scale-103 transition-transform duration-100 ease-in-out">
-                  <a :href="testimonial.companyUrl"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="mdi--external-link font-semibold link lg:text-lg xl:text-xl underline-offset-3 decoration-accent hover:decoration-2">
+                <div class="w-fit lg:text-lg xl:text-xl opacity-70 font-semibold cursor-grab">{{ testimonial.position }}
+                </div>
+                <div
+                  class="w-fit lg:text-lg xl:text-xl opacity-70 hover:scale-103 transition-transform duration-100 ease-in-out">
+                  <a :href="testimonial.companyUrl" target="_blank" rel="noopener noreferrer"
+                    class="mdi--external-link font-semibold link lg:text-lg xl:text-xl underline-offset-3 decoration-accent hover:decoration-2">
                     {{ testimonial.company }}
                   </a>
                 </div>
@@ -125,7 +117,6 @@ const remainingTestimonials = computed(() => {
 </script>
 
 <style scoped>
-
 @media screen and (max-width: 1024px) {
   .chat-bubble {
     border-bottom-left-radius: 0.5rem;
@@ -171,10 +162,11 @@ const remainingTestimonials = computed(() => {
 
 swiper-container::part(button-prev),
 swiper-container::part(button-next) {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 @media screen and (max-width: 1024px) {
+
   swiper-container::part(button-prev),
   swiper-container::part(button-next) {
     display: none;
@@ -185,12 +177,11 @@ swiper-container::part(pagination) {
   cursor: grab;
 }
 
-swiper-container::part(bullet){
+swiper-container::part(bullet) {
   background-color: var(--color-accent);
 }
 
 swiper-container::part(bullet-active) {
   background-color: var(--color-primary);
 }
-
 </style>

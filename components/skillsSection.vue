@@ -4,15 +4,16 @@
       {{ $t("Home.SkillsSection.Header") }}
     </HeaderBanner>
     <div class="flex max-lg:flex-col-reverse lg:flex-row lg:gap-10">
-      <div id="skills" class="join join-vertical h-fit flex-1/2 bg-base-200 shadow-lg/40 border-1 border-primary rounded-lg">
-        <div v-for="(skill, index1) in Object.entries(skills)" :key="index1+'indexSkillsObj'" class="collapse collapse-arrow join-item border-base-300 border">
+      <div id="skills" class="join join-vertical h-fit flex-1/2 bg-base-200 border-1 border-primary rounded-lg">
+        <div v-for="(skill, index1) in Object.entries(skills)" :key="index1 + 'indexSkillsObj'"
+          class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="techStackAndSkills" />
           <div class="collapse-title font-semibold opacity-80">
             {{ skill[0] }}
           </div>
           <div class="collapse-content">
             <ul class="flex flex-wrap gap-2">
-              <li v-for="(item, index2) in skill[1]" :key="index2+'indexSkillsArr'">
+              <li v-for="(item, index2) in skill[1]" :key="index2 + 'indexSkillsArr'">
                 <div class="badge badge-soft badge-primary">{{ item }}</div>
               </li>
             </ul>
@@ -23,9 +24,8 @@
         <picture>
           <source srcset="/graphics/PCB_Desktop.webp" media="(min-width: 1024px)" />
           <!-- lg:max-h-none h-full w-full aspect-video lg:aspect-square object-cover object-center -->
-          <img
-            id="skillsImg"
-            class="lg:mask lg:mask-heart lg:mask-half-2 w-full max-lg:max-h-50 max-lg:aspect-video max-lg:border max-lg:border-primary shadow-lg/40 object-cover object-center rounded-lg"
+          <img id="skillsImg"
+            class="lg:mask lg:mask-heart lg:mask-half-2 w-full max-lg:max-h-50 max-lg:aspect-video max-lg:border max-lg:border-primary object-cover object-center rounded-lg"
             src="/graphics/PCB_Mobile.webp" :alt="$t('Image.PCBAlt')" />
         </picture>
       </div>
@@ -63,7 +63,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
 [data-theme="dark"] {
   #skills .badge {
     color: var(--color-secondary) !important;
@@ -74,7 +73,7 @@ onMounted(() => {
   #skills {
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
-    
+
     .collapse:first-of-type {
       border-top-left-radius: 0 !important;
       border-top-right-radius: 0 !important;

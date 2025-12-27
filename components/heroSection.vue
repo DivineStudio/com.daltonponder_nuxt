@@ -21,7 +21,8 @@
       </div>
     </div>
     <div class="max-2xl:hidden">
-      <button id="goToContent" class="btn btn-circle border-0 mdi--arrow-down-circle hover:scale-120 transition ease-in-out text-shadow-lg/40 absolute bottom-10 left-0 right-0 mx-auto">
+      <button id="goToContent"
+        class="btn btn-circle border-0 mdi--arrow-down-circle hover:scale-120 transition ease-in-out absolute bottom-10 left-0 right-0 mx-auto">
       </button>
     </div>
   </section>
@@ -46,9 +47,9 @@ onMounted(() => {
 
 <style scoped>
 .hero-bg-image {
-    background-image: url('/graphics/HeroBG.webp');
-    background-size: cover;
-    background-position: center;
+  background-image: url('/graphics/HeroBG.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 .mdi--arrow-down-circle {

@@ -2,13 +2,11 @@
   <div>
     <header>
 
-      <nav class="navbar fixed bg-secondary text-secondary-content border-b-1 border-b-(--color-primary) shadow-sm z-9999">
+      <nav class="navbar fixed bg-secondary text-secondary-content border-b-1 border-b-(--color-primary) z-9999">
         <div class="container px-8 mx-auto flex">
           <div class="navbar-start">
             <NuxtLink to="/" class="btn btn-ghost text-xl">
-              <img class="max-h-12"
-                   src="/logos/DP_FullLogo_250x84.webp"
-                   :alt="$t('Image.DaltonPonderLogoAlt')" />
+              <img class="max-h-12" src="/logos/DP_FullLogo_250x84.webp" :alt="$t('Image.DaltonPonderLogoAlt')" />
             </NuxtLink>
           </div>
           <div class="navbar-center hidden lg:flex">
@@ -23,13 +21,10 @@
     </header>
     <main>
       <NuxtPage />
-      <button class="btn btn-circle mdi--arrow-up-circle fixed right-5 bottom-5 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-              id="back-to-top"
-              ref="back-to-top"
-              type="button"
-              aria-label="Back to top"
-              title="Back to top"
-              @click="scrollToTop">
+      <button
+        class="btn btn-circle mdi--arrow-up-circle fixed right-5 bottom-5 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+        id="back-to-top" ref="back-to-top" type="button" aria-label="Back to top" title="Back to top"
+        @click="scrollToTop">
       </button>
     </main>
     <footer>
@@ -43,7 +38,8 @@
   /* transition: opacity 0.25s ease, transform 0.25s ease; */
   opacity: 0;
   transform: scale(0);
-  pointer-events: none; /* don't allow clicks when hidden */
+  pointer-events: none;
+  /* don't allow clicks when hidden */
   z-index: 9999;
 }
 
